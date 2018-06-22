@@ -1,0 +1,20 @@
+//====================================
+//  Media Queries
+//====================================
+@media screen and (min-width:480px) {
+    .principal-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entry {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .entry {
+        flex: 0 1 calc(33% - 1rem);
+    }
+}

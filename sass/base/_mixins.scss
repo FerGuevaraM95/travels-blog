@@ -1,0 +1,20 @@
+//====================================
+// Mixins
+//====================================
+@mixin antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin button {
+    background-color: $blue;
+    color: white;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,67 @@
+//====================================
+// Footer
+//====================================
+.footer {
+    padding-top: 1em;
+    background-color: $blue;
+    color: white;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    &__copyright {
+        margin: 2em 0 0 0;
+        padding: 1em 0;
+        text-align: center;
+        background-color: $strongblue;
+    }
+
+    &__follow__social {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex: 1 0 auto;
+            list-style: none;
+
+            li {
+                margin-right: 1em;
+
+                span {
+                display: none;
+            }
+            }
+        }
+
+        ul li a {
+            text-decoration: none;
+
+            &::before {
+                font-family: "Font Awesome 5 Brands";
+                font-size: 2em;
+                color: white;
+            }
+        } 
+
+        a[href*='facebook.com']::before {
+            content: "\f39e"
+        }
+
+        a[href*='twitter.com']::before {
+            content: "\f099"
+        }
+
+        a[href*='youtube.com']::before {
+            content: "\f167"
+        }
+
+        a[href*='instagram.com']::before {
+            content: "\f16d"
+        }
+
+        a[href*='pinterest.com']::before {
+            content: "\f0d2"
+        }
+    }
+}

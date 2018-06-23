@@ -1,12 +1,13 @@
 //====================================
 // Layout General
 //====================================
-* {
+*, *::before, *::after {
     @include box-sizing(border-box);
     @include antialiased;
 }
 
 html {
+    @include box-sizing(border-box);
     font-size: $primaryFontSize * 1px;
 }
 

@@ -1,0 +1,64 @@
+//====================================
+// Header
+//====================================
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    top: 0em;
+    width: 100%;
+    padding: 1em 0;
+    background-color: $blue;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero {
+    height: 100vh;
+    background: url(/public/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo, .navigation {
+    text-align: center;
+
+    &__img
+        {
+            max-width: 20em;
+        }
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li a {
+        display: inline-block;
+        margin-bottom: .5em;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
+
+.header__content h1 {
+    max-width: 14em;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: $blue;
+}
